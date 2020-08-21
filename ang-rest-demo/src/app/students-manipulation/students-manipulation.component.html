@@ -1,0 +1,31 @@
+<div class="panel panel-primary">
+    <div class="panel-heading">
+      <h2 align="right">Student Dashboard</h2>
+    </div>
+    <div class="panel-body">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Roll No</th>
+            <th>Name</th>            
+            <th>Email</th>
+            <th>GPA</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let student of students | async">
+            <td>{{student.studentNumber}}</td>
+            <td>{{student.name}}</td>
+            <td>{{student.email}}</td>
+            <td>{{student.gpa}}</td>
+            <td><button (click)="updateStudent(student.studentNumber)" class="btn btn-primary">Update</button>
+                <button (click)="deleteStudent(student.studentNumber)" class="btn btn-warning" style="margin-left: 10px">Delete</button>
+                <button (click)="getDetails(student.studentNumber)" class="btn btn-info" style="margin-left: 10px">Details</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  

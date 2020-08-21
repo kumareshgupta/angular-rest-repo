@@ -1,0 +1,20 @@
+[
+    {
+        "id": "101",
+        "title": "REST in 24 Hours",
+        "author": "Mahadevan",
+        "price": 499.00
+    },
+    {
+        "id": "102",
+        "title": "ES6 Primer",
+        "author": "Amit",
+        "price": 399.00
+    },
+    {
+        "id": "103",
+        "title": "Spring Framework",
+        "author": "Sri Mahadev",
+        "price": 399.00
+    }
+]
